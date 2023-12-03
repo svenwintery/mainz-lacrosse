@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainz Lacrosse</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            /* width: auto; */
+            background-color: #f0f0f0;
+        }
+
+        #image-container {
+            position: relative;
+            filter: grayscale(100%); /* Bild in Graustufen umwandeln */
+        
+        }
+
+        #text-overlay {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #001f9f; /* Schriftfarbe */
+            -webkit-text-stroke: 4px white;
+            font-size: 6vw; /* Schriftgröße anpassen */
+            font-family: Rockwell, serif; /* Schriftart anpassen */
+            font-weight: bold; /* Schriftgewicht anpassen */
+            
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img src="img/DSC09099.jpg" width=100% alt="Lacrosse-Spieler">
+    </div>
+    <div id="text-overlay">MAINZ <br> LACROSSE</div>
+    
+
+
+</body>
 </html>
+
+
+
